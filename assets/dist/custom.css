@@ -1,0 +1,75 @@
+
+
+:root {
+    /* =========================== */
+    /* "Native" theme configuration */
+    /* =========================== */
+
+    
+    --fontFamily: Inter, Arial, sans-serif;
+    
+    
+    --contentMaxWidth: 756px;
+    
+    --topNavHeight: 68px;
+    --logoHeight: 28px;
+    
+}
+
+ 
+.side-navigation-wrapper {
+}
+
+ 
+#header {
+}
+
+/* Advanced theme configuration */
+:root {
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="1fde4343-f196-40ee-8d6b-ecf9aba45b2e"] {width:48px;}};
+}
+
+
+
+ /* Custom CSS overrides */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../static/fonts/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../static/fonts/Inter-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../../static/fonts/Inter-SemiBold.ttf) format('truetype');
+}
+
+/* Override Chrome's injected extension_fonts.css
+    https://stackoverflow.com/questions/73161517 */
+@layer base {
+body,
+html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
+
+.firebase-emulator-warning {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+
+}
